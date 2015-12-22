@@ -76,9 +76,9 @@ void LedSetRing(u8 cmd) {
     {
         if(run_Falg == 0)
         {
-            if(Duty_Val < 160)
+            if(Duty_Val < 60)
             {
-                if(count >= 1200)
+                if(count >= 300)
                 {
                     count = 0;
                     Duty_Val++;
@@ -102,7 +102,7 @@ void LedSetRing(u8 cmd) {
         {
             if(Duty_Val > 0)
             {
-                if(count >= 1200)
+                if(count >= 300)
                 {
                     count = 0;
                     Duty_Val--;

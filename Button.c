@@ -3,6 +3,7 @@
 
 
 #include "Button.h"
+#include "eeprom.h"
 
 //up b
 #define BUN_UP      PD_IDR_IDR2
@@ -10,6 +11,8 @@
 #define BUN_LEFT    PA_IDR_IDR2
 #define BUN_RIGHT   PA_IDR_IDR1
 #define BUN_MODE    PC_IDR_IDR3
+
+static u8 mode = 0;
 
 void ButtonInit(void) {
     PD_DDR_DDR2 = 0;
@@ -31,6 +34,13 @@ void ButtonInit(void) {
     PC_DDR_DDR3 = 0;
     PC_CR1_C13  = 1;
     PC_CR2_C23  = 0;
+    
+    if(EepromRead(0x20) == 0x55) {
+        mode = EepromRead(0x21); 
+    } else {
+        EepromWrite(0x20,0x55);
+        EepromWrite(0x21,0);
+    }
 }
 
 u8 ButtonReadMode(void) {
@@ -51,13 +61,17 @@ u8 ButtonReadMode(void) {
     return 0x00;
 }
 
-u8 ButtonSetMode(void) {
-    static u8 mode = 0;
+u8 ButtonSetMode(void) {    
     if(mode < 2) {
         mode++;
     } else {
         mode = 0;
     }
+    EepromWrite(0x21,mode);
+    return mode;
+}
+
+u8 ButtonGetMode(void) {
     return mode;
 }
 

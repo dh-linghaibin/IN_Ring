@@ -1,5 +1,5 @@
 
-
+#include "eeprom.h"
 #include "Sys.h"
 #include "Led.h"
 #include "Com.h"
@@ -8,13 +8,14 @@
 
 int main(void) {
     SysInit();
+    EeepromInit();
     ComInit();
     LedInit();
     EncouderInit();
     ButtonInit();
     INTEN
     while(1) {
-        LedSetRing(0);
+        LedSetRing(ButtonGetMode());
         if(ButtonReadMode() == 0x80) {
             ComSendCmd(0x22,0x10,ButtonSetMode(),0);
         }
