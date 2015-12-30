@@ -67,10 +67,17 @@ void LedSet(u8 cmd) {
     }
 }
 
+static u8 Led_flag = 0;
+
+void LedSetFlag(u8 cmd) {
+    Led_flag = cmd;
+}
+
 void LedSetRing(u8 cmd) {
     static u16 count = 0;
     static u8 run_Falg = 0;
     static u8 Duty_Val = 0;
+    if( Led_flag < 20) {
     count++;
     if(cmd == 0)
     {
@@ -120,15 +127,46 @@ void LedSetRing(u8 cmd) {
             if(count >= 6000)
             {
                 run_Falg = 0;
+                if(Led_flag < 5) {
+                    Led_flag++;
+                } else {
+                    Led_flag = 31;
+                }
             }
         }
     }
     else if(cmd == 1)
     {   
-        led_ring_duty = 60;
+        if(count > 3000) {
+            count = 0;
+            if(led_ring_duty > 0) {
+                led_ring_duty = 0;
+            } else {
+                led_ring_duty = 60;
+            }
+            if(Led_flag < 5) {
+                Led_flag++;
+            } else {
+                Led_flag = 30;
+            }
+        }
     }
     else if(cmd == 2)
     {
+        led_ring_duty = 40;
+        if(count > 3000) {
+            count = 0;
+            if(Led_flag < 20) {
+                Led_flag++;
+            } else {
+                Led_flag = 30;
+            }
+        }
+    }
+    else {
+        led_ring_duty = 0;
+    }
+    } else {
         led_ring_duty = 0;
     }
 }

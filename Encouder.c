@@ -15,10 +15,6 @@ void EncouderInit(void) {
     PC_DDR_DDR7 = 0;
     PC_CR1_C17  = 1;
     PC_CR2_C27  = 0;
-    
-    EXTI_CR1 |= BIT(5);
-	EXTI_CR1 &= ~BIT(4);
-
 }
 
 

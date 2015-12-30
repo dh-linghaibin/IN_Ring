@@ -1,10 +1,9 @@
 
-
-
-
 #include "Button.h"
 #include "eeprom.h"
-
+#include "Sys.h"
+#include "Led.h"
+#include "Com.h"
 //up b
 #define BUN_UP      PD_IDR_IDR2
 #define BUN_DOWN    PD_IDR_IDR3
@@ -33,7 +32,10 @@ void ButtonInit(void) {
     
     PC_DDR_DDR3 = 0;
     PC_CR1_C13  = 1;
-    PC_CR2_C23  = 0;
+    PC_CR2_C23  = 1;
+    
+    EXTI_CR1 |= BIT(5);
+    EXTI_CR1 &= ~BIT(4);
     
     if(EepromRead(0x20) == 0x55) {
         mode = EepromRead(0x21); 
@@ -43,19 +45,26 @@ void ButtonInit(void) {
     }
 }
 
+void ButtonModeInt(u8 cmd) {
+    PC_CR2_C23 = cmd;
+}
+
 u8 ButtonReadMode(void) {
     static u16 count = 0;
     if(BUN_MODE == 0) {
-        if(count < 800) {
+        if(count < 30000) {
             count++;
         } else {
-            if(count == 800)
-            {
-                count = 900;
-                return 0x80;  
+            if(count == 30000){
+                count = 0;
+                return 0x44;  
             }
         }
     } else {
+        if(count > 800) {
+            count = 0;
+            return 0x80;  
+        }
         count = 0;
     }
     return 0x00;
@@ -67,6 +76,7 @@ u8 ButtonSetMode(void) {
     } else {
         mode = 0;
     }
+    LedSetFlag(0);
     EepromWrite(0x21,mode);
     return mode;
 }
@@ -150,7 +160,17 @@ u8 ButtonReadDirection(void)
     return 0x00;
 }
 
+extern u8 sleep_flag;
 
+#pragma vector=7
+__interrupt void EXTI_PORTC_IRQHandler(void)
+{
+    if(sleep_flag == 1) {
+        sleep_flag = 0;
+        ComSendCmd(0x88,0x00,0x00,0);
+    }
+    return ;
+}
 
 
 

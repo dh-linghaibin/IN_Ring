@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\IN_Box\IN_Box.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\IN_Ring.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>
+
+

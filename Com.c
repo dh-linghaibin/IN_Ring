@@ -11,7 +11,7 @@
 void ComInit(void)
 {
     PD_DDR_DDR4 = 0;
-    PD_CR1_C14  = 1;
+    PD_CR1_C14  = 0;
     PD_CR2_C24  = 0;
     
     EXTI_CR1 |= BIT(7);
@@ -20,28 +20,45 @@ void ComInit(void)
 
 u8 ComSend(u8 data[])
 {
-	volatile u16 wait = 0;
-	volatile u8 data_t = 0;//保存临时值
-	volatile u8 i = 0,j = 0;
+	u16 wait = 0;
+	u8 data_t = 0;//保存临时值
+	u8 i = 0,j = 0;
 	
+	COM_BIT_INT = 0;//中断
 	COM_BIT_DR = 1;//设置为输出
-	COM_BIT_OUT = 1;
 	COM_BIT_OUT = 0;
-	DelayUs(200);//拉低20ms说明总线开始
+	DelayUs(150);//拉低20ms说明总线开始
 	COM_BIT_DR = 0;//设置为输入
-	DelayUs(10);//拉低20ms说明总线开始
+	DelayUs(1);
 	while(COM_BIT_IN == 1)//等待从机拉高
 	{
-		wait++;
-		if(wait > 1530)//超时，退出
+		if(wait < 150)
 		{
-			COM_BIT_DR = 1;//设置为输出
-			COM_BIT_OUT = 1;
+			wait++;
+		}
+		else//超时，退出
+		{
+			COM_BIT_INT = 1;//中断
 			return 0;
 		}
 	}
-	while(COM_BIT_IN == 0);//等待从机拉高完成
+	wait = 0;
+	while(COM_BIT_IN == 0)
+	{
+		if(wait < 150)
+		{
+			wait++;
+		}
+		else//超时，退出
+		{
+			return 0;
+		}
+	}
 	COM_BIT_DR = 1;//设置为输出
+   // COM_BIT_OUT = 0;
+  //  delayus(40);
+  //  COM_BIT_OUT = 1;
+  //  delayus(20);
 	for(j = 0;j < 5;j++)
 	{
 		data_t = data[j];
@@ -50,23 +67,24 @@ u8 ComSend(u8 data[])
 			COM_BIT_OUT = 0;
 			if(data_t&0x80)
 			{
-				DelayUs(160);
+				DelayUs(120);
 			}
 			else 
 			{
-				DelayUs(80);
+				DelayUs(40);
 			}
 			COM_BIT_OUT = 1;
-			DelayUs(40);
+			DelayUs(20);
 			data_t<<=1;
 		}
+        //delayus(100);
 	}
-	DelayUs(60);
+	DelayUs(60);//60
 	
 	COM_BIT_OUT = 1;
 	
+	COM_BIT_INT = 1;//中断
 	COM_BIT_DR = 0;//设置为输入
-    
 	return 0;
 }
 
@@ -159,7 +177,9 @@ void ComSendCmd(u8 cmd,u8 par1,u8 par2,u8 par3)
 	com_t_data[1] = par1;
 	com_t_data[2] = par2;
 	com_t_data[3] = par3;
+    INTOFF
 	ComSend(com_t_data);
+    INTEN
 }
 
 

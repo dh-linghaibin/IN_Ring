@@ -11,6 +11,8 @@ u8 ButtonReadDirection(void);
 u8 ButtonGetFlag(void);
 u8 ButtonSetMode(void);
 u8 ButtonGetMode(void);
+void ButtonModeInt(u8 cmd);
+u8 ButtonGetSleep(void);
 
 #endif
 

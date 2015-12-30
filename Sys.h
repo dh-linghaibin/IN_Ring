@@ -8,6 +8,7 @@
 #include "type.h"
 
 void SysInit(void);
+void SysSleep(void);
 
 #endif
 

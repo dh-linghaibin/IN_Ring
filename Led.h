@@ -8,5 +8,6 @@
 void LedInit(void);
 void LedSet(u8 cmd);
 void LedSetRing(u8 cmd);
+void LedSetFlag(u8 cmd);
 
 #endif
