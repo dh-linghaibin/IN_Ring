@@ -597,7 +597,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>$TOOLKIT_DIR$\config\lnkstm8s103f3.icf</state>
+          <state>lnk0t.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -661,7 +661,7 @@
         </option>
         <option>
           <name>IlinkProgramEntryLabel</name>
-          <state>__iar_program_start</state>
+          <state></state>
         </option>
         <option>
           <name>DoFill</name>

@@ -2,97 +2,143 @@
 
 <Workspace>
   <ConfigDictionary>
-    
-  <CurrentConfigs><Project>IN_Box/Debug</Project><Project>IN_Ring/Debug</Project></CurrentConfigs><CurrentProj>IN_Box</CurrentProj><OverviewSelected>0</OverviewSelected></ConfigDictionary>
+    <CurrentConfigs>
+      <Project>IN_Ring/Debug</Project>
+    </CurrentConfigs>
+  </ConfigDictionary>
   <Desktop>
     <Static>
       <Workspace>
         <ColumnWidths>
-          
-          
-          
-          
-        <Column0>132</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+          <Column0>124</Column0>
+          <Column1>27</Column1>
+          <Column2>27</Column2>
+          <Column3>27</Column3>
+        </ColumnWidths>
       </Workspace>
       <Build>
-        
-        
-        
-        
-      <ColumnWidth0>23</ColumnWidth0><ColumnWidth1>1825</ColumnWidth1><ColumnWidth2>486</ColumnWidth2><ColumnWidth3>121</ColumnWidth3></Build>
-      <Debug-Log>
-        
-        
-      <ColumnWidth0>23</ColumnWidth0><ColumnWidth1>2434</ColumnWidth1></Debug-Log>
-      <TerminalIO/>
-      <Find-All-Declarations>
-        <ColumnWidth0>865</ColumnWidth0>
-        <ColumnWidth1>123</ColumnWidth1>
-        <ColumnWidth2>1484</ColumnWidth2>
-      </Find-All-Declarations>
-      <Select-Ambiguous-Definitions>
-        <ColumnWidth0>865</ColumnWidth0>
-        <ColumnWidth1>123</ColumnWidth1>
-        <ColumnWidth2>1484</ColumnWidth2>
-      </Select-Ambiguous-Definitions>
+        <ColumnWidth0>23</ColumnWidth0>
+        <ColumnWidth1>1327</ColumnWidth1>
+        <ColumnWidth2>354</ColumnWidth2>
+        <ColumnWidth3>88</ColumnWidth3>
+      </Build>
     </Static>
     <Windows>
-      
-      
-    <Wnd2>
+      <Wnd0>
         <Tabs>
           <Tab>
-            <Identity>TabID-13515-5562</Identity>
+            <Identity>TabID-25767-2448</Identity>
             <TabName>Workspace</TabName>
             <Factory>Workspace</Factory>
             <Session>
-              
-            <NodeDict><ExpandedNode>IN_Box</ExpandedNode><ExpandedNode>IN_Ring</ExpandedNode><ExpandedNode>IN_Ring/Output</ExpandedNode></NodeDict></Session>
+              <NodeDict>
+                <ExpandedNode>IN_Ring</ExpandedNode>
+              </NodeDict>
+            </Session>
           </Tab>
         </Tabs>
-        
-      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <SelectedTab>0</SelectedTab>
+      </Wnd0>
+      <Wnd1>
         <Tabs>
           <Tab>
-            <Identity>TabID-6615-11832</Identity>
+            <Identity>TabID-22400-2716</Identity>
             <TabName>Build</TabName>
             <Factory>Build</Factory>
             <Session/>
           </Tab>
-          <Tab>
-            <Identity>TabID-21902-17481</Identity>
-            <TabName>Debug Log</TabName>
-            <Factory>Debug-Log</Factory>
-            <Session/>
-          </Tab>
-          <Tab>
-            <Identity>TabID-24540-1857</Identity>
-            <TabName>Find All Declarations</TabName>
-            <Factory>Find-All-Declarations</Factory>
-            <Session/>
-          </Tab>
-          <Tab>
-            <Identity>TabID-10593-6622</Identity>
-            <TabName>Ambiguous Definitions</TabName>
-            <Factory>Select-Ambiguous-Definitions</Factory>
-            <Session/>
-          </Tab>
         </Tabs>
-        
-      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+        <SelectedTab>0</SelectedTab>
+      </Wnd1>
+    </Windows>
     <Editor>
-      
-      
-      
-      
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\IN_Box\Show.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>52</SelStart2><SelEnd2>52</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\IN_Box\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>17</SelStart2><SelEnd2>17</SelEnd2></Tab><ActiveTab>1</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+      <Pane>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\main.c</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>0</YPos2>
+          <SelStart2>119</SelStart2>
+          <SelEnd2>119</SelEnd2>
+        </Tab>
+        <ActiveTab>0</ActiveTab>
+      </Pane>
+      <ActivePane>0</ActivePane>
+      <Sizes>
+        <Pane>
+          <X>1000000</X>
+          <Y>1000000</Y>
+        </Pane>
+      </Sizes>
+      <SplitMode>1</SplitMode>
+    </Editor>
     <Positions>
-      
-      
-      
-      
-      
-    <Top><Row0><Sizes><Toolbar-010426c0><key>iaridepm.enu1</key></Toolbar-010426c0></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>695</Bottom><Right>206</Right><x>-2</x><y>-2</y><xscreen>99</xscreen><yscreen>197</yscreen><sizeHorzCX>80357</sizeHorzCX><sizeHorzCY>192948</sizeHorzCY><sizeVertCX>168831</sizeVertCX><sizeVertCY>682664</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>281</Bottom><Right>1234</Right><x>-2</x><y>-2</y><xscreen>1236</xscreen><yscreen>283</yscreen><sizeHorzCX>1003247</sizeHorzCX><sizeHorzCY>277179</sizeHorzCY><sizeVertCX>80357</sizeVertCX><sizeVertCY>192948</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+      <Top>
+        <Row0>
+          <Sizes>
+            <Toolbar-044c26c0>
+              <key>iaridepm.enu1</key>
+            </Toolbar-044c26c0>
+          </Sizes>
+        </Row0>
+      </Top>
+      <Left>
+        <Row0>
+          <Sizes>
+            <Wnd0>
+              <Rect>
+                <Top>-2</Top>
+                <Left>-2</Left>
+                <Bottom>794</Bottom>
+                <Right>198</Right>
+                <x>-2</x>
+                <y>-2</y>
+                <xscreen>200</xscreen>
+                <yscreen>200</yscreen>
+                <sizeHorzCX>80128</sizeHorzCX>
+                <sizeHorzCY>192864</sizeHorzCY>
+                <sizeVertCX>80128</sizeVertCX>
+                <sizeVertCY>767599</sizeVertCY>
+              </Rect>
+            </Wnd0>
+          </Sizes>
+        </Row0>
+      </Left>
+      <Right>
+        <Row0>
+          <Sizes/>
+        </Row0>
+      </Right>
+      <Bottom>
+        <Row0>
+          <Sizes>
+            <Wnd1>
+              <Rect>
+                <Top>-2</Top>
+                <Left>-2</Left>
+                <Bottom>198</Bottom>
+                <Right>2498</Right>
+                <x>-2</x>
+                <y>-2</y>
+                <xscreen>2500</xscreen>
+                <yscreen>200</yscreen>
+                <sizeHorzCX>1001603</sizeHorzCX>
+                <sizeHorzCY>192864</sizeHorzCY>
+                <sizeVertCX>80128</sizeVertCX>
+                <sizeVertCY>192864</sizeVertCY>
+              </Rect>
+            </Wnd1>
+          </Sizes>
+        </Row0>
+      </Bottom>
+      <Float>
+        <Sizes/>
+      </Float>
+    </Positions>
   </Desktop>
 </Workspace>
 

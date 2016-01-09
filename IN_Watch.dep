@@ -6,237 +6,90 @@
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$PROJ_DIR$\..\IN_Watch\Battery.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Button.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\logo.pbi</file>
+      <file>$PROJ_DIR$\..\IN_Watch\sht21.c</file>
+      <file>$PROJ_DIR$\..\IN_Watch\eeprom.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Com.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\sht21.pbi</file>
+      <file>$PROJ_DIR$\..\IN_Watch\Menu.h</file>
+      <file>$PROJ_DIR$\..\IN_Watch\main.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
       <file>$PROJ_DIR$\..\IN_Watch\button.c</file>
-      <file>$PROJ_DIR$\..\IN_Watch\com.c</file>
+      <file>$PROJ_DIR$\..\IN_Watch\Menu.c</file>
+      <file>$PROJ_DIR$\..\IN_Watch\logo.c</file>
+      <file>$PROJ_DIR$\..\IN_Watch\Sys.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
       <file>$PROJ_DIR$\..\IN_Watch\delay.c</file>
       <file>$PROJ_DIR$\..\IN_Watch\Light.c</file>
-      <file>$PROJ_DIR$\..\IN_Watch\eeprom.c</file>
-      <file>$PROJ_DIR$\..\IN_Watch\logo.c</file>
-      <file>$PROJ_DIR$\..\IN_Watch\main.c</file>
-      <file>$PROJ_DIR$\..\IN_Watch\type.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-      <file>$PROJ_DIR$\..\IN_Watch\com.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-      <file>$PROJ_DIR$\..\IN_Watch\delay.h</file>
-      <file>$PROJ_DIR$\..\IN_Watch\Battery.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Menu.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\oled.o</file>
-      <file>$PROJ_DIR$\..\IN_Watch\Menu.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$TOOLKIT_DIR$\inc\iostm8s103f3.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\eeprom.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\Menu.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\oled.pbi</file>
-      <file>$PROJ_DIR$\..\IN_Watch\Sys.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\delay.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\Battery.pbi</file>
-      <file>$PROJ_DIR$\Debug\Exe\IN_Watch.out</file>
+      <file>$PROJ_DIR$\..\IN_Watch\com.c</file>
       <file>$PROJ_DIR$\..\IN_Watch\oled.c</file>
-      <file>$PROJ_DIR$\..\IN_Watch\sht21.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\eeprom.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\logo.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\Sys.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\Light.o</file>
+      <file>$PROJ_DIR$\..\IN_Watch\Battery.c</file>
+      <file>$PROJ_DIR$\..\IN_Watch\eeprom.c</file>
       <file>$PROJ_DIR$\..\IN_Watch\button.h</file>
+      <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\Menu.o</file>
       <file>$PROJ_DIR$\Debug\Obj\Button.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
-      <file>$PROJ_DIR$\..\IN_Watch\sht21.h</file>
       <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
-      <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
-      <file>$PROJ_DIR$\..\IN_Watch\Light.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
-      <file>$PROJ_DIR$\..\IN_Watch\eeprom.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Sys.pbi</file>
-      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
-      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Com.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\Com.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\logo.pbi</file>
       <file>$TOOLKIT_DIR$\config\lnkstm8s103f3.icf</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\sht21.o</file>
+      <file>$PROJ_DIR$\..\IN_Watch\com.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\IN_Watch\Battery.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Sys.o</file>
+      <file>$PROJ_DIR$\..\IN_Watch\Light.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Battery.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\IN_Watch.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\delay.pbi</file>
       <file>$PROJ_DIR$\..\IN_Watch\Sys.h</file>
       <file>$PROJ_DIR$\Debug\Obj\Light.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\Battery.o</file>
-      <file>$PROJ_DIR$\..\IN_Watch\Menu.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\sht21.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Sys.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\oled.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Light.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Com.pbi</file>
       <file>$PROJ_DIR$\..\IN_Watch\oled.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Button.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\sht21.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\logo.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\..\IN_Watch\sht21.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Menu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
+      <file>$TOOLKIT_DIR$\inc\iostm8s103f3.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\eeprom.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\oled.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Battery.pbi</file>
+      <file>$PROJ_DIR$\..\IN_Watch\type.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\eeprom.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\IN_Watch\delay.h</file>
     </outputs>
     <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 29</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\IN_Watch\Battery.c</name>
+      <name>$PROJ_DIR$\..\IN_Watch\sht21.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 28</file>
+          <file> 6</file>
         </tool>
         <tool>
           <name>ICCSTM8</name>
-          <file> 57</file>
+          <file> 30</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 13 8 22 42</file>
+          <file> 50 57 53 25 62 59 14 9 28 61 46 0 32 47 49</file>
         </tool>
         <tool>
           <name>ICCSTM8</name>
-          <file> 13 8 22 42</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\IN_Watch\button.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 39</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 61</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 38 8 22 42 58</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 38 8 22 42 58</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\IN_Watch\com.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 51</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 52</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 10 8 22 42 12</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 10 8 22 42 12</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\IN_Watch\delay.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 27</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 40</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 12 8 22 42</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 12 8 22 42</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\IN_Watch\Light.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 56</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 37</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 44 8 22 42</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 44 8 22 42</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\IN_Watch\eeprom.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 23</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 33</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 46 8 22 42</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 46 8 22 42</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\IN_Watch\logo.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 53</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 35</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 8 22 42</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 8 22 42</file>
+          <file> 50 57 53 25 62 59 14 9 28 61 46 0 32 47 49</file>
         </tool>
       </inputs>
     </file>
@@ -245,7 +98,99 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 16</file>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39 57 53 25 45 50 35 33 21 31 7</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 39 57 53 25 45 50 35 33 21 31 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IN_Watch\button.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 57 53 25 7</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 21 57 53 25 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IN_Watch\Menu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 57 53 25 45 50</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 7 57 53 25 45 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IN_Watch\logo.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 53 25</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 57 53 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IN_Watch\Sys.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
         </tool>
         <tool>
           <name>ICCSTM8</name>
@@ -255,43 +200,112 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 55 8 22 42 60 41 44 13 38 10 58</file>
+          <file> 39 57 53 25</file>
         </tool>
         <tool>
           <name>ICCSTM8</name>
-          <file> 55 8 22 42 60 41 44 13 38 10 58</file>
+          <file> 39 57 53 25</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\IN_Watch\Menu.c</name>
+      <name>$PROJ_DIR$\..\IN_Watch\delay.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 15</file>
+          <file> 38</file>
         </tool>
         <tool>
           <name>ICCSTM8</name>
-          <file> 24</file>
+          <file> 52</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 58 8 22 42 60 41</file>
+          <file> 62 57 53 25</file>
         </tool>
         <tool>
           <name>ICCSTM8</name>
-          <file> 58 8 22 42 60 41</file>
+          <file> 62 57 53 25</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\IN_Watch\Sys.c</name>
+      <name>$PROJ_DIR$\..\IN_Watch\Light.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 47</file>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 57 53 25</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 35 57 53 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IN_Watch\com.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31 57 53 25 62</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 31 57 53 25 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IN_Watch\oled.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45 57 53 25 62</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 45 57 53 25 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IN_Watch\Battery.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
         </tool>
         <tool>
           <name>ICCSTM8</name>
@@ -301,11 +315,34 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 55 8 22 42</file>
+          <file> 33 57 53 25</file>
         </tool>
         <tool>
           <name>ICCSTM8</name>
-          <file> 55 8 22 42</file>
+          <file> 33 57 53 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\IN_Watch\eeprom.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 57 53 25</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 4 57 53 25</file>
         </tool>
       </inputs>
     </file>
@@ -314,55 +351,18 @@
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 54 57 37 24 36 61 52 40 33 35 34 19 59 48 17</file>
+          <file> 26 36 43 23 34 1 5 52 54 48 29 42 30 27 22</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\IN_Watch\oled.c</name>
+      <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 25</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 19</file>
+          <name>ILINK</name>
+          <file> 37</file>
         </tool>
       </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 60 8 22 42 12</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 60 8 22 42 12</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\IN_Watch\sht21.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 62</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 59</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 41 8 22 42 12 11 50 45 9 32 43 21 49 14 18</file>
-        </tool>
-        <tool>
-          <name>ICCSTM8</name>
-          <file> 41 8 22 42 12 11 50 45 9 32 43 21 49 14 18</file>
-        </tool>
-      </inputs>
     </file>
   </configuration>
   <configuration>

@@ -2,9 +2,6 @@
 
 <workspace>
   <project>
-    <path>$WS_DIR$\..\IN_Box\IN_Box.ewp</path>
-  </project>
-  <project>
     <path>$WS_DIR$\IN_Ring.ewp</path>
   </project>
   <batchBuild/>
